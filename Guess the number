@@ -1,0 +1,24 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+int main()
+{
+    int guess,random;
+    cout<<"Enter the number to be guessed";
+    cin>>guess;
+    srand(time(0));
+    random=rand()%100 + 1;
+    cout<<"The random number is "<<random<<"\n";
+    if(guess){
+        if(random==guess){
+            cout<<"You have guessed the exact number"<<"\n";
+        }
+        else if(random > guess){
+            cout<<"You have guessed the number lesser than the random number generated"<<"\n";
+        }
+        else{
+            cout<<"You have guessed the number greater than the random number generated"<<"\n";
+        }
+    }
+}
