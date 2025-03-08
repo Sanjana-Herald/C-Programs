@@ -1,0 +1,50 @@
+#include<iostream>
+using namespace std;
+int main(){
+	float n1,n2,add,sub,mul,div;
+	int arithmetic;
+	while(1){
+	cout<<"Enter the numbers"<<"\n";
+	cin>>n1>>n2;
+	cout<<"Enter the arithmetic operation"<<"\n";
+	cout<<"1.Addition"<<"\n"<<"2.Subtraction"<<"\n"<<"3.Multiplication"<<"\n"<<"4.Division"<<"\n"<<"5.Default"<<"\n";
+	cin>>arithmetic;
+	if(n1){
+		switch(arithmetic){
+			case 1:{
+				add=n1+n2;
+				cout<<"The Addition is performed on choosing the 1st option "<<"\n";
+				cout<<"The Answer is"<<" "<<add<<"\n";
+				break;
+			}
+			case 2:{
+				sub=n1-n2;
+				cout<<"The Subtraction is performed on choosing the 2nd option "<<"\n";
+				cout<<"The Answer is"<<" "<<sub<<"\n";
+				break;
+			}
+			case 3:{
+				mul=n1*n2;
+				cout<<"The Multiplication is performed on choosing the 3rd option "<<"\n";
+				cout<<"The Answer is"<<" "<<mul<<"\n";
+				break;
+			}
+			case 4:{
+				div=n1/n2;
+				cout<<"The Division is performed on choosing the 4th option "<<"\n";
+				cout<<"The Answer is"<<" "<<div<<"\n";
+				break;
+			}
+			default:{
+				cout<<"You entered an invalid input"<<"\n";
+				exit(0);
+				break;
+			}
+		}
+	}
+	else{
+		cout<<"Enter number greater than 0"<<"\n";
+	
+	}
+}
+}
